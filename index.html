@@ -1,0 +1,758 @@
+<html lang="en">
+
+<head>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" href="assets/gmail-icon.png" type="image/x-icon">
+  <script src="script.js"></script>
+  <title>Gmail</title>
+</head>
+
+<body>
+  <!-- Header Starts -->
+  <div class="header">
+    <div class="head-lbox">
+      <i class="material-icons"> menu </i>
+      <img src="assets/gmail-logo.png" alt="" />
+    </div>
+
+    <div class="head-mbox">
+      <i class="material-icons"> search </i>
+      <input type="text" placeholder="Search mail" />
+      <i class="material-icons"> arrow_drop_down </i>
+    </div>
+
+    <div class="head-rbox">
+
+
+      <div class="dropdown-1">
+        <a href="#menu" onclick="myFunction1()" class="dropbtn-1">
+
+          <i class="material-icons"> apps </i>
+          <!-- <img src="./assets/menu.png" alt="menu" width="20" height="20"> -->
+        </a>
+        <div id="myDropdown-1" class="dropdown-1-content">
+          <table>
+            <tr class="gapps">
+              <td class="gapps"><a href="#"><img src="assets/account.png" alt="account" width="40"
+                    height="40">Account</a></td>
+
+              <td class="gapps"><a href="#"><img src="assets/googlesearch-icon.png" alt="search" width="40"
+                    height="40">Search</a></td>
+
+              <td class="gapps"> <a href="#"><img src="assets/youtube.png" alt="youtube" width="40" height="40">
+                  YouTube</a></td>
+            </tr>
+            <tr class="gapps">
+              <td class="gapps"><a href="#"><img src="assets/googleplay-icon.png" alt="play" width="40"
+                    height="40">Play</a></td>
+
+              <td class="gapps"><a href="#"><img src="assets/news.png" alt="news" width="40" height="40">News</a></td>
+
+              <td class="gapps"><a href="#"><img src="assets/gmail-icon.png" alt="gmail" width="40" height="40">
+                  Gmail</a></td>
+            </tr>
+            <tr class="gapps">
+              <td class="gapps"><a href="#"><img src="assets/meet.png" alt="meet" width="40" height="40">Meet</a></td>
+
+              <td class="gapps"><a href="#"><img src="assets/chat.png" alt="chat" width="40" height="40"><br />Chat</a>
+              </td>
+
+              <td class="gapps"><a href="#"><img src="assets/contacts.png" alt="contacts" width="40" height="40">
+                  Contacts</a></td>
+            </tr>
+            <tr class="gapps">
+              <td class="gapps"><a href="#"><img src="assets/googledrive-icon.png" alt="drive" width="40"
+                    height="40">Drive</a></td>
+
+              <td class="gapps"><a href="#"><img src="assets/calendar.png" alt="calendar" width="40"
+                    height="40">Calendar</a></td>
+
+              <td class="gapps"><a href="#"><img src="assets/translate.png" alt="translate" width="40" height="40">
+                  Translate</a></td>
+            </tr>
+            <tr class="gapps">
+              <td class="gapps"><a href="#"><img src="assets/googlephotos-icon.png" alt="photos" width="40"
+                    height="40">Photos</a></td>
+
+              <td class="gapps"><a href="#"><img src="assets/googleduo-icon.png" alt="duo" width="40"
+                    height="40"><br />Duo </a></td>
+
+              <td class="gapps"><a href="#"><img src="assets/chrome-icon.png" alt="chrome" width="40" height="40">
+                  Chrome</a></td>
+            </tr>
+            <tr class="gapps">
+              <td class="gapps"><a href="#"><img src="assets/shopping.png" alt="shopping" width="40"
+                    height="40">Shopping</a></td>
+
+              <td class="gapps"></td>
+
+              <td class="gapps"></td>
+            </tr>
+            <tr class="gapps">
+              <td class="gapps" colspan="3">
+                <hr />
+              </td>
+            </tr>
+
+            <tr class="gapps">
+              <td class="gapps"><a href="#"><img src="assets/Finance.png" alt="finance" width="40"
+                    height="40">Finance</a></td>
+
+              <td class="gapps"><a href="#"><img src="assets/docs.png" alt="docs" width="40" height="40"><br />Docs</a>
+              </td>
+
+              <td class="gapps"><a href="#"><img src="assets/sheets.png" alt="sheets" width="40" height="40">
+                  Sheet</a></td>
+            </tr>
+            <tr class="gapps">
+              <td class="gapps"><a href="#"><img src="assets/slides.png" alt="slides" width="40" height="40">Slides</a>
+              </td>
+
+              <td class="gapps"><a href="#"><img src="assets/books.png" alt="books" width="40" height="40">Books</a>
+              </td>
+
+              <td class="gapps"><a href="#"><img src="assets/blogger.png" alt="blogger" width="40" height="40">
+                  Blogger</a></td>
+            </tr>
+            <tr class="gapps">
+              <td class="gapps"><a href="#"><img src="assets/googlehangouts-icon.png" alt="hangsout" width="40"
+                    height="40">Hangouts</a></td>
+
+              <td class="gapps"><a href="#"><img src="assets/keep.png" alt="keeps" width="40" height="40">Keeps</a></td>
+
+              <td class="gapps"><a href="#"><img src="assets/jamboard.png" alt="jamboard" width="40" height="40">
+                  Jamboard</a></td>
+            </tr>
+            <tr class="gapps">
+              <td class="gapps"><a href="#"><img src="assets/googleearth-icon.png" alt="earth" width="40"
+                    height="40">Earth</a></td>
+
+              <td class="gapps"><a href="#"><img src="assets/collection.png" alt="collections" width="40"
+                    height="40">Collections</a></td>
+
+              <td class="gapps"><a href="#"><img src="assets/artsculture.png" alt="artsculture" width="40" height="40">
+                  Arts and<br />Culture</a></td>
+            </tr>
+            <tr class="gapps">
+              <td class="gapps"><a href="#"><img src="assets/googleads-icon.png" alt="ads" width="40" height="40">Google
+                  Ads</a></td>
+
+              <td class="gapps"><a href="#"><img src="assets/podcasts.png" alt="podcasts" width="40"
+                    height="40">Podcasts</a></td>
+
+              <td class="gapps"><a href="#"><img src="assets/travel.png" alt="travel" width="40" height="40">
+                  Travel</a></td>
+            </tr>
+            <tr class="gapps">
+              <td class="gapps"><a href="#"><img src="assets/forms.png" alt="forms" width="40" height="40">Forms</a>
+              </td>
+
+              <td class="gapps"></td>
+
+              <td class="gapps"></td>
+            </tr>
+            <tr class="gapps">
+              <td class="gapps" colspan="3">
+                <button class="gapps">More from Google</button>
+              </td>
+            </tr>
+
+
+          </table>
+        </div>
+      </div>
+
+      <i class="material-icons"> notifications </i>
+
+      <div class="dropdown">
+        <a href="#accountinfo" onclick="myFunction()" class="dropbtn">
+          <i class="material-icons"> account_circle </i>
+        </a>
+        <div id="myDropdown" class="dropdown-content">
+          <table>
+            <tr>
+              <td class="one">
+
+                <a href="#">
+                  <img src="./assets/images-n.jpg" alt="Avatar" class="avatar">
+                  <img src="./assets/camera.png" alt="Avatar" class="cam">
+                </a>
+                <br />
+                Nasir Raza<br />
+                send2raza@gmail.com<br />
+                <button class="gmanage"> Manage your goole Account</button>
+                <br /><br />
+                <hr />
+
+              </td>
+            </tr>
+            <tr class="two">
+              <td class="two">
+                <a href="#">
+                  <img src="./assets/images-n.jpg" alt="Avatar" class="avatar1">
+                  <b>Nasir Raza</b>
+                  <i> &emsp;&nbsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Signed out</i>
+                  <br />&emsp;&emsp;&nbsp;&emsp;&emsp;nasirraza786112@gmail.com<br /><br />
+                </a>
+                <a href="#"><br />
+                  <img class="avatar2" src="./assets/adduseraccount.png" alt="Avatar" height="20" width="20">
+                  Add another account<br /><br />
+
+                </a>
+              </td>
+            </tr>
+            <tr>
+              <td class="one">
+                <hr /><br />
+                <button class="gsout">Signed out of all accounts</button>
+                <br /><br />
+              </td>
+            </tr>
+
+            <tr>
+
+              <td class="one">
+                <hr /><br />
+                <a href="#">Privacy Policy Terms of Service</a>
+
+                <br />
+              </td>
+            </tr>
+          </table>
+
+        </div>
+      </div>
+
+    </div>
+  </div>
+  <!-- Header Ends -->
+
+  <!-- Main Body Starts -->
+  <div class="main__body">
+    <!-- Sidebar Starts -->
+    <div class="sidebar">
+      <button class="sidebar__compose"><i class="material-icons"> add </i>Compose</button>
+      <div class="sidebarOption sidebarOption__active">
+        <i class="material-icons"> inbox </i>
+        <h3>Inbox</h3>
+      </div>
+
+      <div class="sidebarOption">
+        <i class="material-icons"> star </i>
+        <h3>Starred</h3>
+      </div>
+
+      <div class="sidebarOption">
+        <i class="material-icons"> access_time </i>
+        <h3>Snoozed</h3>
+      </div>
+
+      <div class="sidebarOption">
+        <i class="material-icons"> label_important </i>
+        <h3>Important</h3>
+      </div>
+
+      <div class="sidebarOption">
+        <i class="material-icons"> near_me </i>
+        <h3>Sent</h3>
+      </div>
+
+      <div class="sidebarOption">
+        <i class="material-icons"> note </i>
+        <h3>Drafts</h3>
+      </div>
+
+      <div class="sidebarOption">
+        <i class="material-icons"> expand_more </i>
+        <h3>More</h3>
+      </div>
+
+      <div class="sidebar__footer">
+        <div class="sidebar__footerIcons">
+          <i class="material-icons"> person </i>
+          <i class="material-icons"> duo </i>
+          <i class="material-icons"> phone </i>
+        </div>
+      </div>
+    </div>
+    <!-- Sidebar Ends -->
+
+    <!-- Email List Starts -->
+    <div class="emailList">
+      <!-- Settings Starts -->
+      <div class="emailList__settings">
+        <div class="emailList__settingsLeft">
+          <input type="checkbox" />
+          <i class="material-icons"> arrow_drop_down </i>
+          <i class="material-icons"> redo </i>
+          <i class="material-icons"> more_vert </i>
+        </div>
+        <div class="emailList__settingsRight">
+          <i class="material-icons"> chevron_left </i>
+          <i class="material-icons"> chevron_right </i>
+          <i class="material-icons"> keyboard_hide </i>
+          <i class="material-icons"> settings </i>
+        </div>
+      </div>
+      <!-- Settings Ends -->
+
+      <!-- Section Starts -->
+      <div class="emailList__sections">
+        <div class="section section__selected">
+          <i class="material-icons"> inbox </i>
+          <h4>Primary</h4>
+        </div>
+
+        <div class="section">
+          <i class="material-icons"> people </i>
+          <h4>Social</h4>
+        </div>
+
+        <div class="section">
+          <i class="material-icons"> local_offer </i>
+          <h4>Promotions</h4>
+        </div>
+      </div>
+      <!-- Section Ends -->
+
+      <!-- Email List rows starts -->
+      <div class="emailList__list">
+        <!-- Email Row Starts -->
+        <div class="emailRow">
+          <div class="emailRow__options">
+            <input type="checkbox" name="" id="" />
+            <i class="material-icons"> star_border </i>
+            <i class="material-icons"> label_important </i>
+          </div>
+
+          <h3 class="emailRow__title">YouTube</h3>
+
+          <div class="emailRow__message">
+            <h4>
+              You Got a New Subscriber
+              <i class="emailRow__description"> - on Your Channel Future Coders </i>
+            </h4>
+          </div>
+
+          <p class="emailRow__time">10pm</p>
+        </div>
+        <!-- Email Row Ends -->
+
+        <!-- Email Row Starts -->
+        <div class="emailRow">
+          <div class="emailRow__options">
+            <input type="checkbox" name="" id="" />
+            <i class="material-icons"> star_border </i>
+            <i class="material-icons"> label_important </i>
+          </div>
+
+          <h3 class="emailRow__title">YouTube</h3>
+
+          <div class="emailRow__message">
+            <h4>
+              You Got a New Subscriber
+              <i class="emailRow__description"> - on Your Channel Future Coders </i>
+            </h4>
+          </div>
+
+          <p class="emailRow__time">10pm</p>
+        </div>
+        <!-- Email Row Ends -->
+
+        <!-- Email Row Starts -->
+        <div class="emailRow">
+          <div class="emailRow__options">
+            <input type="checkbox" name="" id="" />
+            <i class="material-icons"> star_border </i>
+            <i class="material-icons"> label_important </i>
+          </div>
+
+          <h3 class="emailRow__title">YouTube</h3>
+
+          <div class="emailRow__message">
+            <h4>
+              You Got a New Subscriber<i class="emailRow__description">
+                - on Your Channel Future Coders
+              </i>
+            </h4>
+          </div>
+
+          <p class="emailRow__time">10pm</p>
+        </div>
+        <!-- Email Row Ends -->
+
+        <!-- Email Row Starts -->
+        <div class="emailRow">
+          <div class="emailRow__options">
+            <input type="checkbox" name="" id="" />
+            <i class="material-icons"> star_border </i>
+            <i class="material-icons"> label_important </i>
+          </div>
+
+          <h3 class="emailRow__title">Google</h3>
+
+          <div class="emailRow__message">
+            <h4>
+              Login on New Device<i class="emailRow__description">
+                - is this your Device ?
+              </i>
+            </h4>
+          </div>
+
+          <p class="emailRow__time">2am</p>
+        </div>
+        <!-- Email Row Ends -->
+
+        <!-- Email Row Starts -->
+        <div class="emailRow">
+          <div class="emailRow__options">
+            <input type="checkbox" name="" id="" />
+            <i class="material-icons"> star_border </i>
+            <i class="material-icons"> label_important </i>
+          </div>
+
+          <h3 class="emailRow__title">YouTube</h3>
+
+          <div class="emailRow__message">
+            <h4>
+              You Got a New Subscriber
+              <i class="emailRow__description"> - on Your Channel Future Coders </i>
+            </h4>
+          </div>
+
+          <p class="emailRow__time">10pm</p>
+        </div>
+        <!-- Email Row Ends -->
+
+        <!-- Email Row Starts -->
+        <div class="emailRow">
+          <div class="emailRow__options">
+            <input type="checkbox" name="" id="" />
+            <i class="material-icons"> star_border </i>
+            <i class="material-icons"> label_important </i>
+          </div>
+
+          <h3 class="emailRow__title">YouTube</h3>
+
+          <div class="emailRow__message">
+            <h4>
+              You Got a New Subscriber
+              <i class="emailRow__description"> - on Your Channel Future Coders </i>
+            </h4>
+          </div>
+
+          <p class="emailRow__time">10pm</p>
+        </div>
+        <!-- Email Row Ends -->
+
+        <!-- Email Row Starts -->
+        <div class="emailRow">
+          <div class="emailRow__options">
+            <input type="checkbox" name="" id="" />
+            <i class="material-icons"> star_border </i>
+            <i class="material-icons"> label_important </i>
+          </div>
+
+          <h3 class="emailRow__title">YouTube</h3>
+
+          <div class="emailRow__message">
+            <h4>
+              You Got a New Subscriber<i class="emailRow__description">
+                - on Your Channel Future Coders
+              </i>
+            </h4>
+          </div>
+
+          <p class="emailRow__time">10pm</p>
+        </div>
+        <!-- Email Row Ends -->
+
+        <!-- Email Row Starts -->
+        <div class="emailRow">
+          <div class="emailRow__options">
+            <input type="checkbox" name="" id="" />
+            <i class="material-icons"> star_border </i>
+            <i class="material-icons"> label_important </i>
+          </div>
+
+          <h3 class="emailRow__title">Google</h3>
+
+          <div class="emailRow__message">
+            <h4>
+              Login on New Device<i class="emailRow__description">
+                - is this your Device ?
+              </i>
+            </h4>
+          </div>
+
+          <p class="emailRow__time">2am</p>
+        </div>
+        <!-- Email Row Ends -->
+
+        <!-- Email Row Starts -->
+        <div class="emailRow">
+          <div class="emailRow__options">
+            <input type="checkbox" name="" id="" />
+            <i class="material-icons"> star_border </i>
+            <i class="material-icons"> label_important </i>
+          </div>
+
+          <h3 class="emailRow__title">YouTube</h3>
+
+          <div class="emailRow__message">
+            <h4>
+              You Got a New Subscriber
+              <i class="emailRow__description"> - on Your Channel Future Coders </i>
+            </h4>
+          </div>
+
+          <p class="emailRow__time">10pm</p>
+        </div>
+        <!-- Email Row Ends -->
+
+        <!-- Email Row Starts -->
+        <div class="emailRow">
+          <div class="emailRow__options">
+            <input type="checkbox" name="" id="" />
+            <i class="material-icons"> star_border </i>
+            <i class="material-icons"> label_important </i>
+          </div>
+
+          <h3 class="emailRow__title">YouTube</h3>
+
+          <div class="emailRow__message">
+            <h4>
+              You Got a New Subscriber
+              <i class="emailRow__description"> - on Your Channel Future Coders </i>
+            </h4>
+          </div>
+
+          <p class="emailRow__time">10pm</p>
+        </div>
+        <!-- Email Row Ends -->
+
+        <!-- Email Row Starts -->
+        <div class="emailRow">
+          <div class="emailRow__options">
+            <input type="checkbox" name="" id="" />
+            <i class="material-icons"> star_border </i>
+            <i class="material-icons"> label_important </i>
+          </div>
+
+          <h3 class="emailRow__title">YouTube</h3>
+
+          <div class="emailRow__message">
+            <h4>
+              You Got a New Subscriber<i class="emailRow__description">
+                - on Your Channel Future Coders
+              </i>
+            </h4>
+          </div>
+
+          <p class="emailRow__time">10pm</p>
+        </div>
+        <!-- Email Row Ends -->
+
+        <!-- Email Row Starts -->
+        <div class="emailRow">
+          <div class="emailRow__options">
+            <input type="checkbox" name="" id="" />
+            <i class="material-icons"> star_border </i>
+            <i class="material-icons"> label_important </i>
+          </div>
+
+          <h3 class="emailRow__title">Google</h3>
+
+          <div class="emailRow__message">
+            <h4>
+              Login on New Device<i class="emailRow__description">
+                - is this your Device ?
+              </i>
+            </h4>
+          </div>
+
+          <p class="emailRow__time">2am</p>
+        </div>
+        <!-- Email Row Ends -->
+
+        <!-- Email Row Starts -->
+        <div class="emailRow">
+          <div class="emailRow__options">
+            <input type="checkbox" name="" id="" />
+            <i class="material-icons"> star_border </i>
+            <i class="material-icons"> label_important </i>
+          </div>
+
+          <h3 class="emailRow__title">YouTube</h3>
+
+          <div class="emailRow__message">
+            <h4>
+              You Got a New Subscriber
+              <i class="emailRow__description"> - on Your Channel Future Coders </i>
+            </h4>
+          </div>
+
+          <p class="emailRow__time">10pm</p>
+        </div>
+        <!-- Email Row Ends -->
+
+        <!-- Email Row Starts -->
+        <div class="emailRow">
+          <div class="emailRow__options">
+            <input type="checkbox" name="" id="" />
+            <i class="material-icons"> star_border </i>
+            <i class="material-icons"> label_important </i>
+          </div>
+
+          <h3 class="emailRow__title">YouTube</h3>
+
+          <div class="emailRow__message">
+            <h4>
+              You Got a New Subscriber
+              <i class="emailRow__description"> - on Your Channel Future Coders </i>
+            </h4>
+          </div>
+
+          <p class="emailRow__time">10pm</p>
+        </div>
+        <!-- Email Row Ends -->
+
+        <!-- Email Row Starts -->
+        <div class="emailRow">
+          <div class="emailRow__options">
+            <input type="checkbox" name="" id="" />
+            <i class="material-icons"> star_border </i>
+            <i class="material-icons"> label_important </i>
+          </div>
+
+          <h3 class="emailRow__title">YouTube</h3>
+
+          <div class="emailRow__message">
+            <h4>
+              You Got a New Subscriber<i class="emailRow__description">
+                - on Your Channel Future Coders
+              </i>
+            </h4>
+          </div>
+
+          <p class="emailRow__time">10pm</p>
+        </div>
+        <!-- Email Row Ends -->
+
+        <!-- Email Row Starts -->
+        <div class="emailRow">
+          <div class="emailRow__options">
+            <input type="checkbox" name="" id="" />
+            <i class="material-icons"> star_border </i>
+            <i class="material-icons"> label_important </i>
+          </div>
+
+          <h3 class="emailRow__title">Google</h3>
+
+          <div class="emailRow__message">
+            <h4>
+              Login on New Device<i class="emailRow__description">
+                - is this your Device ?
+              </i>
+            </h4>
+          </div>
+
+          <p class="emailRow__time">2am</p>
+        </div>
+        <!-- Email Row Ends -->
+
+        <!-- Email Row Starts -->
+        <div class="emailRow">
+          <div class="emailRow__options">
+            <input type="checkbox" name="" id="" />
+            <i class="material-icons"> star_border </i>
+            <i class="material-icons"> label_important </i>
+          </div>
+
+          <h3 class="emailRow__title">YouTube</h3>
+
+          <div class="emailRow__message">
+            <h4>
+              You Got a New Subscriber
+              <i class="emailRow__description"> - on Your Channel Future Coders </i>
+            </h4>
+          </div>
+
+          <p class="emailRow__time">10pm</p>
+        </div>
+        <!-- Email Row Ends -->
+
+        <!-- Email Row Starts -->
+        <div class="emailRow">
+          <div class="emailRow__options">
+            <input type="checkbox" name="" id="" />
+            <i class="material-icons"> star_border </i>
+            <i class="material-icons"> label_important </i>
+          </div>
+
+          <h3 class="emailRow__title">YouTube</h3>
+
+          <div class="emailRow__message">
+            <h4>
+              You Got a New Subscriber
+              <i class="emailRow__description"> - on Your Channel Future Coders </i>
+            </h4>
+          </div>
+
+          <p class="emailRow__time">10pm</p>
+        </div>
+        <!-- Email Row Ends -->
+
+        <!-- Email Row Starts -->
+        <div class="emailRow">
+          <div class="emailRow__options">
+            <input type="checkbox" name="" id="" />
+            <i class="material-icons"> star_border </i>
+            <i class="material-icons"> label_important </i>
+          </div>
+
+          <h3 class="emailRow__title">YouTube</h3>
+
+          <div class="emailRow__message">
+            <h4>
+              You Got a New Subscriber<i class="emailRow__description">
+                - on Your Channel Future Coders
+              </i>
+            </h4>
+          </div>
+
+          <p class="emailRow__time">10pm</p>
+        </div>
+        <!-- Email Row Ends -->
+
+        <!-- Email Row Starts -->
+        <div class="emailRow">
+          <div class="emailRow__options">
+            <input type="checkbox" name="" id="" />
+            <i class="material-icons"> star_border </i>
+            <i class="material-icons"> label_important </i>
+          </div>
+
+          <h3 class="emailRow__title">Google</h3>
+
+          <div class="emailRow__message">
+            <h4>
+              Login on New Device<i class="emailRow__description">
+                - is this your Device ?
+              </i>
+            </h4>
+          </div>
+
+          <p class="emailRow__time">2am</p>
+        </div>
+        <!-- Email Row Ends -->
+      </div>
+      <!-- Email List rows Ends -->
+    </div>
+    <!-- Email List Ends -->
+  </div>
+  <!-- Main Body Ends -->
+</body>
+
+</html>
